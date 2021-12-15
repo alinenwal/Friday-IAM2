@@ -50,7 +50,7 @@ resource "aws_iam_instance_profile" "test_profile" {
 # Here we are granting access to s3 and DynamoDB.
 # Add a statement block for every service you need access too.
 data "aws_iam_policy_document" "source" {
-    # This is the statement block for s3
+    # This is the statement block for s3 bucket
   statement {
       sid = "s3 get and put"
       effect = "Allow"
